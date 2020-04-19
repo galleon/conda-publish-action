@@ -17,7 +17,7 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: publish-to-conda
-      uses: fcakyon/conda-publish-action@v1.3
+      uses: galleon/conda-publish-action@v1.3
       with:
         subdir: 'conda'
         anacondatoken: ${{ secrets.ANACONDA_TOKEN }}
@@ -51,4 +51,4 @@ jobs:
 ### Supported anaconda channels
 - conda-forge
 - pytorch
-- fcakyon
+- galleon
